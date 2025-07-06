@@ -47056,7 +47056,7 @@ campaignTrail_temp.jet_data = [{
         "runName": "Harris",
         "runImage": "https://upload.cc/i1/2025/06/10/HWXB6z.jpg"
     },
-    "cyoa_enabled": false,
+    "cyoa_enabled": true,
     "cyoa_data": {
         "1751743941447": {
             "answer": "6030",
