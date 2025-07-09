@@ -9,24 +9,22 @@ Map(e.questions_json.map((f) => [f.pk, f]));
 
 cyoAdventure = function (a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
-    const playerPolling =
-    e.current_results[0].find((f) => f.pk === e.candidate_id);
+    
+    const playerPolling = e.current_results[0].find((f) => f.pk === e.candidate_id);
 
 
     if (ans == 6030) {
-       e.questions_json.splice(
-         9, 
-         0,
-         questionMap.get(46562),
-         questionMap.get(46563),
-         questionMap.get(46564),
-         questionMap.get(46565),
-         questionMap.get(46566),
-         questionMap.get(46584),
-         questionMap.get(46954),
-         questionMap.get(46958),
-         questionMap.get(47024),
-         questionMap.get(47175),
+       e.questions_json.splice(9, 0,
+           questionMap.get(46562),
+           questionMap.get(46563),
+           questionMap.get(46564),
+           questionMap.get(46565),
+           questionMap.get(46566),
+           questionMap.get(46584),
+           questionMap.get(46954),
+           questionMap.get(46958),
+           questionMap.get(47024),
+           questionMap.get(47175),
       );
     }
 
