@@ -46,51 +46,19 @@ cyoAdventure = function (a) {
     }
 
 
-    if (e.player_answers.includes(47178) && quickstats[0] >= 270 && cand.fields.last_name == "Harris") {
-    if (used != true) {
-        setInterval(function () {
-            used = true;
-            imgg = document.getElementsByClassName("person_image")[0];
-            if (imgg != null) {
-                imgg.src = "https://i.imgur.com/DNDz4nQ.jpeg";
-            }
-        }, 100);
-    }
-   return "<h3>Trump was once again a loser. Harris has won the 2024 Presidential Election!</h3><p>After the election result was projected, you got a call from Harris, who was emotional and grateful. She thanked you for placing faith in her, the conversation was heartwarming. And many of your close aids felt relieved that Democrats held the White House. Democrat lawmakers praising your decision to pass the torch, like the post-debate flipouts had never happened. </p><p>When the half of country were celebrating that Democracy prevailed, you had mixed feelings, but the your familiy, including your grandson and graddaughters rushed to you and hugged you. Reminded the line your mom usually said: "Joey, familiy is the beginning, the middle, and the end..."</p>";
-    }
 
-
-    if (e.player_answers.includes(47178) && quickstats[0] < 270 && cand.fields.last_name == "Harris") {
-    if (used != true) {
-        setInterval(function () {
-            used = true;
-            imgg = document.getElementsByClassName("person_image")[0];
-            if (imgg != null) {
-                imgg.src = "https://i.imgur.com/WSo8u9p.jpeg";
-            }
-        }, 100);
-    }
-   return "<h3>Trump 2.0 is coming. Harris has lost the 2024 Presidential Election.</h3><p>Despite Harris' best efforts, she still lost to Trump, who will start his another-term with a trifecta. After make a call to Trump and celebrate his victory, you could imagine the critics out there were blasting the reason Harris lost is because you stayed in the race for too long.</p><p>You regretted your decision of dropping out, and thinks if you had stayed, you could've won. Then you saw Jill, Hunter and Ashley came to you and embraced you. The idea of pardoning Hunter and keep him by your side, just popped out of your mind...</p>";
-    }
-
-
-
-
-e.questions_json.splice(9, 0,
-questionMap.get(46562),
-questionMap.get(46563),
-questionMap.get(46564),
-questionMap.get(46565),
-questionMap.get(46566),
-questionMap.get(46584),
-questionMap.get(46954),
-questionMap.get(46958),
-questionMap.get(47024),
-questionMap.get(47175),
-questionMap.get(47177))
-
-
-
+   e.questions_json.splice(9, 0,
+   questionMap.get(46562),
+   questionMap.get(46563),
+   questionMap.get(46564),
+   questionMap.get(46565),
+   questionMap.get(46566),
+   questionMap.get(46584),
+   questionMap.get(46954),
+   questionMap.get(46958),
+   questionMap.get(47024),
+   questionMap.get(47175),
+   questionMap.get(47177))
 }
 
 campaignTrail_temp.questions_json = [
@@ -51443,7 +51411,33 @@ campaignTrail_temp.jet_data = [{
             "endingImage": "https://i.imgur.com/DisHLHy.jpeg",
             "endingText": "<h3>No candidate reaches 270 Electoral Votes. It will likely go to the U.S. House.</h3>\n\n<p>This is the result that no one would expect. Neither of you and Trump reached 270 electoral votes. It will very likely go to the U.S. House, which is Republican majority, and will probably elevate Trump to the presidency.</p>\n\n<p>Trump already declared himself the winner and filed a lawsuit in swing-states that you won, and your base is both mad at Trump and disappointed in you. The tension of American electorates just reached the climax...</p>",
             "amount": "269"
-        }
+        },
+        if (e.player_answers.includes(47178) && quickstats[0] >= 270 && cand.fields.last_name == "Harris") {
+        if (used != true) {
+        setInterval(function () {
+            used = true;
+            imgg = document.getElementsByClassName("person_image")[0];
+            if (imgg != null) {
+                imgg.src = "https://i.imgur.com/DNDz4nQ.jpeg";
+            }
+        }, 100);
+    }
+        return "<h3>Trump was once again a loser. Harris has won the 2024 Presidential Election!</h3><p>After the election result was projected, you got a call from Harris, who was emotional and grateful. She thanked you for placing faith in her, the conversation was heartwarming. And many of your close aids felt relieved that Democrats held the White House. Democrat lawmakers praising your decision to pass the torch, like the post-debate flipouts had never happened. </p><p>When the half of country were celebrating that Democracy prevailed, you had mixed feelings, but the your familiy, including your grandson and graddaughters rushed to you and hugged you. Reminded the line your mom usually said: "Joey, familiy is the beginning, the middle, and the end..."</p>";
+    }
+
+
+        if (e.player_answers.includes(47178) && quickstats[0] < 270 && cand.fields.last_name == "Harris") {
+        if (used != true) {
+        setInterval(function () {
+            used = true;
+            imgg = document.getElementsByClassName("person_image")[0];
+            if (imgg != null) {
+                imgg.src = "https://i.imgur.com/WSo8u9p.jpeg";
+            }
+        }, 100);
+    }
+        return "<h3>Trump 2.0 is coming. Harris has lost the 2024 Presidential Election.</h3><p>Despite Harris' best efforts, she still lost to Trump, who will start his another-term with a trifecta. After make a call to Trump and celebrate his victory, you could imagine the critics out there were blasting the reason Harris lost is because you stayed in the race for too long.</p><p>You regretted your decision of dropping out, and thinks if you had stayed, you could've won. Then you saw Jill, Hunter and Ashley came to you and embraced you. The idea of pardoning Hunter and keep him by your side, just popped out of your mind...</p>";
+    }
     }
 }
 ]
