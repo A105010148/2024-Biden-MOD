@@ -54570,8 +54570,8 @@ cyoAdventure = function (a) {
 
     const averagePercent = avg.reduce((s, p) => s + p, 0) / avg.length;
     
-    if ([41558, 41559, 41560, 41561].includes(ans) && averagePercent < 0.49) {
-    e.questions_json[35] = questionMap.get(47569);
+    if ([41558, 41559, 41560, 41561].includes(ans) && averagePercent < 0.51) {
+    e.questions_json[34] = questionMap.get(47569);
     e.global_parameter_json[0].fields.question_count = 35;
     }
 }
